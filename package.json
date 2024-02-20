@@ -1,0 +1,14 @@
+{
+  "name": "cordova-plugin-safe-area",
+  "author": "Steven Ortiz",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "A Cordova plugin for collecting safe area dimensions.",
+  "homepage": "https://github.com/Tarjeta-Ultra/cordova-plugin-safe-area",
+  "cordova": {
+    "id": "cordova-plugin-safe-area",
+    "platforms": [
+      "android"
+    ]
+  }
+}

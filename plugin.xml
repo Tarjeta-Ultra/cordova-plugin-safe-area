@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin
+    id="cordova-plugin-safe-area"
+    version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>cordova-plugin-safe-area</name>
+    <js-module name="cordova-plugin-safe-area" src="www/cordova-plugin-safe-area.js">
+        <clobbers target="cordova.plugins.SafeArea" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="SafeArea">
+                <param name="android-package" value="me.stevenortiz.cordova.SafeArea" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/me/stevenortiz/cordova/SafeArea.kt" target-dir="kotlin/me/stevenortiz/cordova" />
+    </platform>
+</plugin>
